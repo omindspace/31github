@@ -24,6 +24,12 @@ while True:
         userName = input()
         talk('Nice to meet you ' + userName + '!')
 
+    if st in ['what is your age','age']:
+        talk('I have just created by you!' + userName + ' What is your age?')
+        userAge = input()
+        talk ( 'Ohh , my creator is so young! '+ userAge + ' is very good yuears to be happy')
+        
+
     if st in ['bye', 'goodbye'] :
         break
 
