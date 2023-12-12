@@ -1,19 +1,34 @@
 import pyttsx3
+import speech_recognition as sr
 from random import choice
 
 engine = pyttsx3.init()
+r = sr.Recognizer()
 
 def talk(text):
     print('', text)
     engine.say(text)
     engine.runAndWait()
 
+def listen():
+    with sr.Microphone() as sourse:
+        print('Speak...')
 
+        r.adjust_for_ambient_noise(sourse)
+        audio = r.listen(sourse)
+
+        try:
+            text = r.recognize_google(audio, language="en-En")
+        except sr.UnknownValueError:
+            pass
+        print(text.capitalize())
+
+        return text
 userName = ''
 
 while True:
     
-    st = input('-->: ')
+    st = listen()
     st = st.lower()
 
     if st in ['hello','good morning']:
@@ -21,12 +36,12 @@ while True:
 
     if st in ['what is your name', 'your name']:
         talk('My name is R2D2!What is your name?')
-        userName = input()
+        userName = listen()
         talk('Nice to meet you ' + userName + '!')
 
     if st in ['what is your age','age']:
         talk('I have just created by you!' + userName + ' What is your age?')
-        userAge = input()
+        userAge = listen()
         talk ( 'Ohh , my creator is so young! '+ userAge + ' is very good yuears to be happy')
         
 
