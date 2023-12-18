@@ -68,7 +68,7 @@ def press_key(event):
 win = tk.Tk()
 win.geometry(f"240x270+100+200")
 win['bg'] = '#33ffe6'             
-win.title("Калькултор")
+win.title("Калькулятор")
 
 win.bind('<Key>',press_key)
 
