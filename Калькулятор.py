@@ -5,10 +5,8 @@ def add_digit(digit):
     value = calc.get()
     if value[0]=='0' and len(value)==1:
         value = value[1:]
-    calc['state']=tk.NORMAL
     calc.delete(0,tk.END)
     calc.insert(0,value+digit)
-    calc['state']=tk.DISABLED
 
 def add_operation(operation):
     value = calc.get()
@@ -17,18 +15,14 @@ def add_operation(operation):
     elif '+' in value or '-' in value or '*' in value or '/' in value:
             calculate()
             value = calc.get()
-    calc['state']=tk.NORMAL
     calc.delete(0,tk.END)
     calc.insert(0,value+operation)
-    calc['state']=tk.DISABLED
     
 def calculate():
     value = calc.get()
     if value[-1] in '+-*/':
         value = value+value[:-1]
-    calc['state']=tk.NORMAL
     calc.delete(0,tk.END)
-    calc['state']=tk.DISABLED
     try:
         calc.insert(0,eval(value))
     except (NameError,SyntaxError):
@@ -39,10 +33,8 @@ def calculate():
         calc.insert(0,0)
 
 def clear():
-    calc['state']=tk.NORMAL
     calc.delete(0,tk.END)
     calc.insert(0,0)
-    calc['state']=tk.DISABLED
     
 def make_digit_button(digit):
     return tk.Button(text=digit, bd=5, font=('Arial', 13), 
@@ -68,6 +60,9 @@ def press_key(event):
         add_operation(event.char)
     elif event.char == '\r':
         calculate()
+    elif event.char == ',':
+        clear()
+        
 
     
 win = tk.Tk()
@@ -79,7 +74,6 @@ win.bind('<Key>',press_key)
 
 calc = tk.Entry(win, justify=tk.RIGHT, font=('Arial',15), width=15)
 calc.insert(0,'0')
-calc['state']=tk.DISABLED
 calc.grid(row=0,column=0, columnspan=4, stick='we', padx=5)
 
 make_digit_button('1').grid(row=1, column=0, stick='wens', padx=5, pady=5)
