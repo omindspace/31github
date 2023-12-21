@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anemia-Анемия</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style11.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="#" class="header">Все об анемии</a>
+    <header class="header">
+        <nav class="container">
+            <a href="#" >Все об анемии</a>
+            <a href="#">Лечение</a>
+            <a href="#">Виды анемии</a>
+        </div>
+        <div class="header-inner">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Odit odio delectus nesciunt architecto!</p>
+            <p>Sed architecto ipsum corrupti quas?</p>
         </div>
     </header>
     <main>
         <div class="container">
-            <h1><span class="text-red">Анемия (малокровие)</span></h1>
+            <h1><span class="text-red">Анемия </span>(малокровие)</h1>
             <img src="images/anemia.jpeg" alt="Anemia">
             <h2>Что такое анемия?</h2>
             <p><span class="text-red">Анемия – патологическое состояние, характеризующееся уменьшением количества
@@ -25,10 +32,9 @@
                 <hr> Может быть самостоятельным заболеванием или сопровождать течение иных болезней, осложнять их.</p>
             <p><b>Анемия (малокровие)</b> – широко встречающееся в гематологии заболевание. В зависимости от вида, ею
                 могут cтрадать люди любого возраста и пола, но чаще с состоянием сталкиваются дети, беременные женщины и
-                пожилые люди.
-                <span class="text-red"><i>Эритроциты</i> и находящийся в них белок гемоглобин обеспечивают насыщение
-                    клеток организма кислородом.</span> Дефицит этих компонентов крови негативно сказывается на
-                состоянии – организм испытывает дефицит кислорода, нарушается работа многих органов и систем.</p>
+                пожилые люди. <i>Эритроциты</i> и находящийся в них белок гемоглобин обеспечивают
+                насыщение клеток организма кислородом. Дефицит этих компонентов крови негативно сказывается
+                на состоянии – организм испытывает дефицит кислорода, нарушается работа многих органов и систем.</p>
         </div>
     </main>
 
@@ -56,7 +62,6 @@
             </dl>
         </div>
 
-
         <img width="700" height="250" src="images/erithrocytes.jpeg" alt="Erithrocytes">
 
         <div>
@@ -78,8 +83,6 @@
             </p>
         </div>
     </div>
-
-
 
     <table class="table-class">
         <caption>Классификация анемии</caption>
@@ -115,7 +118,6 @@
         </tr>
     </table>
 
-
     <hr>
 
     <form action="">
@@ -128,6 +130,88 @@
         </div>
     </form>
 
+    <form class="form-register">
+        <div class="form-register-item">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-register-item"><label for="email">Email</label><input type="email" name="Email" id="email">
+        </div>
+        <div class="form-register-item">
+            Password<input type="password" name="password" id="password">
+        </div>
+        <div class="form-register-item">
+            <label for="Comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        <div class="form-register-item"><select size="3" multiple name="hero[]">
+                <option disabled>Выберите героя</option>
+                <option value="Чебурашка">Чебурашка</option>
+                <option selected value="Крокодил Гена">Крокодил Гена</option>
+                <option value="Шапокляк">Шапокляк</option>
+                <option value="Крыса Лариса">Крыса Лариса</option>
+            </select>
+        </div>
+
+        <div class="form-register-item"> <label for="remember"></label>
+            Запомнить меня <input type="checkbox" name="remember" id="remember"></div>
+        <div class="form-register-item">
+            <h4> Какой у вас пол?</h4>
+            <label for="female">
+                Female
+                <input type="radio" name="person" id="female"></label>
+            <label for="male">
+                Male
+                <input type="radio" name="person" id="male"></label>
+        </div>
+        <div class="form-register-item">
+            <button type="submit">
+                Отправить
+            </button></div>
+    </form>
+
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Nesciunt incidunt consequatur quibusdam quo.</li>
+        <li>
+            <ol>
+                <li><a href="lo">Lorem.</a></li>
+                <li><a href="lo">Fuga.</a></li>
+                <li><a href="lo">Quibusdam.</a></li>
+                <li>
+                    <ul>
+                        <li>Lorem.</li>
+                        <li>Nesciunt.</li>
+                        <li>Aut?</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Illum iure eligendi unde numquam.</li>
+        <li>Commodi ipsam quam eius eaque.</li>
+        <li>Iusto, in veniam! Ad, officia!</li>
+    </ul>
+<ul class="block">
+    <li>Lorem.</li>
+    <li>Molestias!</li>
+    <li>Voluptas!</li>
+</ul>
+
+<ol class="block">
+    <li>Lorem.</li>
+    <li>Consequatur.</li>
+    <li>Blanditiis!</li>
+</ol>
+
+<div class="main"></div>
+<div class="block">
+    <h2>title</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Hic perspiciatis incidunt delectus esse!</p>
+    <p>At accusantium consectetur dicta distinctio.</p>
+</div>
+<main class="container"></main>
     <footer class="footer">
         <p>Страница выполнена <a href="https://crm-new.attractor-school.com/profile/my-works">Кудербаевой Айгерим</a>
         </p>
