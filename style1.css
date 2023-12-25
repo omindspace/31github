@@ -1,54 +1,154 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background: white;
     margin: 0;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1284px;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
-header {
-    background: black;
-    padding: 10px 0;
 }
 
 .logo {
-    font-size: 30px;
-    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main-navigation {
+    margin-top: 30px;
+    border-bottom: 4px solid #D9D9D9;
+    margin-bottom: 30px;
+}
+
+.navigation-list {
+    text-align: center;
+    padding: 0;
+}
+
+.navigation-item {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.navigation-item a {
+    color: #475658;
+    font-size: 20px;
+    line-height: 23px;
     text-decoration: none;
 }
 
-.main-title {
-    text-align: center;
-    text-transform: uppercase;
+.main-block {
+    background-color: #D44B4B;
+    color: #fff;
 }
 
-.text-green {
-    color: teal;
-}
-
-.love-place {
-    display: block;
-    margin: 0 auto;
-}
-
-.card {
-    text-align: center;
-    border: 1px solid black;
+.main-block h1 {
+    font-size: 45px;
+    line-height: 53px;
+    margin-top: 0;
     width: 50%;
 }
 
-.footer {
-    margin-top: 20px;
-    text-align: center;
-    background: black;
-    color: white;
-    padding: 10px 0;
+.main-block-inner {
+    background-image: url(../images/main-pic.png);
+    background-repeat: no-repeat;
+    background-position: 79% 148%;
+    background-size: 52%;
+    padding: 50px 0 170px 0;
 }
 
-.footer a {
-    color: thistle;
+.link-more {
+    display: inline-block;
+    margin-top: 40px;
+    color: #475658;
+    background: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 100px;
+    border-radius: 10px;
+}
+
+.block-risks h2 {
+    font-size: 45px;
+    line-height: 1.3;
+    color: #03073C;
+    font-weight: normal;
+    text-align: center;
+    margin: 60px 120px 30px 120px;
+    padding: 0 60px;
+}
+
+.block-risks p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #03073C;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.card h3 {
+    font-size: 60px;
+    color: #03073C;
+    border-bottom: 3px #D9D9D9;
+}
+
+.card p {
+    text-align: left;
+    font-size: 18px;
+    color: #03073C;
+    line-height: 1.3;
+}
+
+.riskone {
+    
+}
+
+.risktwo {
+    background-image: url(../images/pic-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom
+}
+
+.riskthree {
+    background-image: url(../images/pic-3.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.link-risk {
+    font-size: 18px;
+    color: #03073C;
+    text-decoration: none;
+    line-height: 1.3;
+}
+
+.footer {
+    background: #475658;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer span {
+    background-image: url(../images/phone.png);
+
 }
