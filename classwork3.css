@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  font-size: 18px;
+  color: #111111;
+}
+
+.container {
+  max-width: 1164px;
+  margin: 0 auto;
+}
+
+.header {
+  border: 1px solid rgba(17, 17, 17, 0.5);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.phone-number {
+  color:#007198;
+  font-weight: bold;
+}
+
+.btn-call {
+  font-size: 12px;
+  background: #F47220;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(244, 114 , 32, 0.4);
+  border: none;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.navigation-item a {
+  font-size: 14px;
+  color: #111111;
+  text-decoration: none;
+}
+
+.main-block {
+  background:  rgba(72, 184, 223, 0.2);
+}
+
+.main-block h1 {
+  font-size: 50px;
+  font-weight: normal;
+  width: 36%;
+  margin: 0;
+}
+
+.text-blue {
+  color: #007198;
+  text-decoration: none;
+}
+
+.main-block p {
+  line-height: 23px;
+  width: 41%;
+  margin: 16px 83px 0 0;
+}
+
+.main-block-inner {
+ display: flex; 
+ justify-content: space-between;
+ padding: 20px 0 43px 0;
+ background: url(../images/bg.jpg) no-repeat;
+}
